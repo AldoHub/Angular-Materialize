@@ -1,1 +1,146 @@
-/* You can add global styles to this file, and also import other style files */
+
+/* -----------   custom styling ----------------         */
+
+
+html {
+    background: #ddd;
+}
+
+
+body {
+    position: relative;
+    background: #fff;
+    font-family: Comfortaa, sans-serif;
+    padding: 0;
+    margin: 0px;
+}
+
+body * {
+    transition: all 0.300ms ease-in-out;
+}
+
+header {
+    display: none;
+    
+}
+
+
+.parallax-container, .parallax {
+    z-index: 10;
+}
+
+.parallax-container {
+    border-right:10px solid #F44336;
+}
+
+
+#menu {
+  position: fixed;
+  padding-top:3px; 
+  text-transform: uppercase;
+  top: 14px;
+  font-size: 20px;
+  z-index: 99;
+ 
+   
+}
+
+.sidenav-header, .collapsible-header {
+    font-size: 40px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    text-indent: 5px;
+}
+
+
+
+.side-nav li a {
+  font-size: 20px;
+  display: block;
+}
+
+
+
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;   
+    padding: 0px;
+    position: relative;
+}
+
+
+
+section {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.heading {
+    font-family: Comfortaa;
+     text-transform: uppercase;
+     font-size: 90px;
+}
+
+
+section.multi-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+    align-items: center;
+}
+
+.multi-section-image img {
+    width: 100%;
+    border-right:5px solid #F44336;
+   
+}
+
+.caption {
+    font-size: 35px;
+    text-transform: uppercase;
+    
+}
+
+
+footer {
+    text-align: center;
+  border-top:1px solid #ddd;
+    padding: 20px;
+    color: #aaa;
+  
+}
+
+
+
+  @media (min-width:0px) and (max-width:1050px) {
+     
+    section {
+        width: 100%;
+        margin: 0;
+    }
+
+    section.multi-section {
+        display: block;
+    }
+    
+
+    
+    .heading {
+        font-size: 40px;
+    }
+
+    .caption {
+        font-size: 20px;
+        
+    }
+    
+    .carousel p {
+      
+        font-size: 12px;
+    }
+
+  }
